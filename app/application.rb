@@ -8,13 +8,12 @@ class Application
     req = Rack::Request.new(env)
 
     if req.path.match(/items/)
-      @@cart.each do |item|
+      @@items.each do |item|
         resp.write "#{item}\n"
       end
 
     elsif req.path.match(/cart/)
-      binding.pry
-      @@items.each do |item|
+      @@cart.each do |item|
         resp.write "#{item}\n"
       end
 
