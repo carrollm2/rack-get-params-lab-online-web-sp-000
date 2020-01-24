@@ -22,7 +22,7 @@ class Application
       end
 
     elsif req.path.match(/add/)
-      #binding.pry
+      binding.pry
 
     elsif req.path.match(/search/)
       search_term = req.params["q"]
