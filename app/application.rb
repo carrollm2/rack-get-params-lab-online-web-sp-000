@@ -23,6 +23,7 @@ class Application
 
     elsif req.path.match(/add/)
       binding.pry
+      search_term = req.params["item"]
 
     elsif req.path.match(/search/)
       search_term = req.params["q"]
