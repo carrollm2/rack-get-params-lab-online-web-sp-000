@@ -22,7 +22,7 @@ class Application
       end
 
     elsif req.path.match(/add/)
-      binding.pry
+
       search_term = req.params["item"]
 
       if @@items.include?(search_term)
