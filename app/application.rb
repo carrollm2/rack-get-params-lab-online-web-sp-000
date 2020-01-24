@@ -13,6 +13,7 @@ class Application
       end
 
     elsif req.path.match(/cart/)
+      binding.pry
       @@items.each do |item|
         resp.write "#{item}\n"
       end
